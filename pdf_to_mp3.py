@@ -7,7 +7,7 @@ import os
 #input file path from user
 def getPATH():  
     global q,fileName,file1
-    inpFilePAth = input('Enter file path:- ')
+    inpFilePAth = os.getcwd()+'/jbasics.pdf'
     source = Path(inpFilePAth)
     p = PurePosixPath(inpFilePAth)  
     q = str(p.parent)
